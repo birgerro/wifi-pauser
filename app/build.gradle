@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23 // Most advanced API features used
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "birger.wifi_pauser"
+        minSdkVersion 10 // Minimum API required to run app
+        targetSdkVersion 23 // Latest API the app has been tested against
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile project(':Android-Wheel')
+}

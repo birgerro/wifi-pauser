@@ -1,0 +1,3 @@
+include ':app'
+include ':Android-Wheel'
+project(':Android-Wheel').projectDir = file('../Android-Wheel/wheel')
