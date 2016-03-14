@@ -7,7 +7,8 @@ android {
     defaultConfig {
         applicationId "birger.wifi_pauser"
         minSdkVersion 10 // Minimum API required to run app
-        targetSdkVersion 23 // Latest API the app has been tested against
+        targetSdkVersion 18 // Beginning with API 19 (KITKAT) alarm delivery became inexact
+        // targetSdkVersion is latest API the app has been tested against
         versionCode 1
         versionName "1.0"
     }
